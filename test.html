@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post Gallery</title>
+    <script async src="https://www.instagram.com/embed.js"></script>
+
+    <style>
+        /* Basic styling for the form and gallery */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .input-box {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery-item {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 300px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Show Us Your Instagram Posts!</h1>
+    <div class="form-container">
+        <input type="text" id="postLink" class="input-box" placeholder="Paste your Instagram post link here">
+        <button id="submitButton" class="submit-btn">Submit</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
